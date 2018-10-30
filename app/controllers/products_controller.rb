@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
  
    # Load the cart from the session, or create a new empty cart.
-    current_cart << @item.id
+    current_cart << @product.id
   end
   
 end
